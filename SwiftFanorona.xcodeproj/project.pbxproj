@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		728E600519436315000E9F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E600419436315000E9F89 /* AppDelegate.swift */; };
+		728E600719436315000E9F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E600619436315000E9F89 /* ViewController.swift */; };
+		728E600A19436315000E9F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728E600819436315000E9F89 /* Main.storyboard */; };
+		728E600C19436315000E9F89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728E600B19436315000E9F89 /* Images.xcassets */; };
+		728E601819436315000E9F89 /* SwiftFanoronaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E601719436315000E9F89 /* SwiftFanoronaTests.swift */; };
+		E58FFAD21AB0609700CF378B /* BoardCellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAD11AB0609700CF378B /* BoardCellState.swift */; };
+		E58FFAD41AB060BD00CF378B /* BoardLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAD31AB060BD00CF378B /* BoardLocation.swift */; };
+		E58FFAD61AB060F700CF378B /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAD51AB060F700CF378B /* Board.swift */; };
+		E58FFAD81AB062BA00CF378B /* FanoronaBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAD71AB062BA00CF378B /* FanoronaBoard.swift */; };
+		E58FFADA1AB0650E00CF378B /* BoardSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAD91AB0650E00CF378B /* BoardSquare.swift */; };
+		E58FFADC1AB0666A00CF378B /* FanoronaBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFADB1AB0666A00CF378B /* FanoronaBoardView.swift */; };
+		E58FFADE1AB06F6300CF378B /* BoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFADD1AB06F6300CF378B /* BoardDelegate.swift */; };
+		E58FFAE01AB0708A00CF378B /* DelegateMulticast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFADF1AB0708A00CF378B /* DelegateMulticast.swift */; };
+		E58FFAE21AB0765A00CF378B /* MoveDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAE11AB0765A00CF378B /* MoveDirection.swift */; };
+		E58FFAE41AB07FF400CF378B /* FanoronaBoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAE31AB07FF400CF378B /* FanoronaBoardDelegate.swift */; };
+		E58FFAE61AB08B0500CF378B /* ComputerOpponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FFAE51AB08B0500CF378B /* ComputerOpponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		728E601219436315000E9F89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728E5FF719436314000E9F89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 728E5FFE19436314000E9F89;
+			remoteInfo = SwiftReversi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		728E5FFF19436314000E9F89 /* SwiftFanorona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFanorona.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		728E600319436315000E9F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728E600419436315000E9F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		728E600619436315000E9F89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = ViewController.swift; path = SwiftFanorona/ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		728E600919436315000E9F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		728E600B19436315000E9F89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		728E601119436315000E9F89 /* SwiftFanoronaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFanoronaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		728E601619436315000E9F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728E601719436315000E9F89 /* SwiftFanoronaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFanoronaTests.swift; sourceTree = "<group>"; };
+		E58FFAD11AB0609700CF378B /* BoardCellState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardCellState.swift; path = SwiftFanorona/BoardCellState.swift; sourceTree = SOURCE_ROOT; };
+		E58FFAD31AB060BD00CF378B /* BoardLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardLocation.swift; path = SwiftFanorona/BoardLocation.swift; sourceTree = SOURCE_ROOT; };
+		E58FFAD51AB060F700CF378B /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = SwiftFanorona/Board.swift; sourceTree = SOURCE_ROOT; };
+		E58FFAD71AB062BA00CF378B /* FanoronaBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = FanoronaBoard.swift; path = SwiftFanorona/FanoronaBoard.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E58FFAD91AB0650E00CF378B /* BoardSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardSquare.swift; path = SwiftFanorona/BoardSquare.swift; sourceTree = SOURCE_ROOT; };
+		E58FFADB1AB0666A00CF378B /* FanoronaBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = FanoronaBoardView.swift; path = SwiftFanorona/FanoronaBoardView.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E58FFADD1AB06F6300CF378B /* BoardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardDelegate.swift; path = SwiftFanorona/BoardDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E58FFADF1AB0708A00CF378B /* DelegateMulticast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelegateMulticast.swift; path = SwiftFanorona/DelegateMulticast.swift; sourceTree = SOURCE_ROOT; };
+		E58FFAE11AB0765A00CF378B /* MoveDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoveDirection.swift; path = SwiftFanorona/MoveDirection.swift; sourceTree = SOURCE_ROOT; };
+		E58FFAE31AB07FF400CF378B /* FanoronaBoardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanoronaBoardDelegate.swift; path = SwiftFanorona/FanoronaBoardDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E58FFAE51AB08B0500CF378B /* ComputerOpponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComputerOpponent.swift; path = SwiftFanorona/ComputerOpponent.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		728E5FFC19436314000E9F89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728E600E19436315000E9F89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		728E5FF619436314000E9F89 = {
+			isa = PBXGroup;
+			children = (
+				728E600119436315000E9F89 /* SwiftFanorona */,
+				728E601419436315000E9F89 /* SwiftFanoronaTests */,
+				728E600019436314000E9F89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		728E600019436314000E9F89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				728E5FFF19436314000E9F89 /* SwiftFanorona.app */,
+				728E601119436315000E9F89 /* SwiftFanoronaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		728E600119436315000E9F89 /* SwiftFanorona */ = {
+			isa = PBXGroup;
+			children = (
+				E5B2CA9A1ABAADD80086D8A1 /* controller */,
+				728E603419437EF4000E9F89 /* view */,
+				728E603319437ED0000E9F89 /* model */,
+				728E600419436315000E9F89 /* AppDelegate.swift */,
+				728E600219436315000E9F89 /* Supporting Files */,
+			);
+			path = SwiftFanorona;
+			sourceTree = "<group>";
+		};
+		728E600219436315000E9F89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				728E600819436315000E9F89 /* Main.storyboard */,
+				728E600B19436315000E9F89 /* Images.xcassets */,
+				728E600319436315000E9F89 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		728E601419436315000E9F89 /* SwiftFanoronaTests */ = {
+			isa = PBXGroup;
+			children = (
+				728E601719436315000E9F89 /* SwiftFanoronaTests.swift */,
+				728E601519436315000E9F89 /* Supporting Files */,
+			);
+			path = SwiftFanoronaTests;
+			sourceTree = "<group>";
+		};
+		728E601519436315000E9F89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				728E601619436315000E9F89 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		728E603319437ED0000E9F89 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E58FFAD11AB0609700CF378B /* BoardCellState.swift */,
+				E58FFAD31AB060BD00CF378B /* BoardLocation.swift */,
+				E58FFAD51AB060F700CF378B /* Board.swift */,
+				E58FFAD71AB062BA00CF378B /* FanoronaBoard.swift */,
+				E58FFAE31AB07FF400CF378B /* FanoronaBoardDelegate.swift */,
+				E58FFADD1AB06F6300CF378B /* BoardDelegate.swift */,
+				E58FFADF1AB0708A00CF378B /* DelegateMulticast.swift */,
+				E58FFAE11AB0765A00CF378B /* MoveDirection.swift */,
+				E58FFAE51AB08B0500CF378B /* ComputerOpponent.swift */,
+			);
+			name = model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		728E603419437EF4000E9F89 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E58FFAD91AB0650E00CF378B /* BoardSquare.swift */,
+				E58FFADB1AB0666A00CF378B /* FanoronaBoardView.swift */,
+			);
+			name = view;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E5B2CA9A1ABAADD80086D8A1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				728E600619436315000E9F89 /* ViewController.swift */,
+			);
+			name = controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		728E5FFE19436314000E9F89 /* SwiftFanorona */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728E601B19436315000E9F89 /* Build configuration list for PBXNativeTarget "SwiftFanorona" */;
+			buildPhases = (
+				728E5FFB19436314000E9F89 /* Sources */,
+				728E5FFC19436314000E9F89 /* Frameworks */,
+				728E5FFD19436314000E9F89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftFanorona;
+			productName = SwiftReversi;
+			productReference = 728E5FFF19436314000E9F89 /* SwiftFanorona.app */;
+			productType = "com.apple.product-type.application";
+		};
+		728E601019436315000E9F89 /* SwiftFanoronaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728E601E19436315000E9F89 /* Build configuration list for PBXNativeTarget "SwiftFanoronaTests" */;
+			buildPhases = (
+				728E600D19436315000E9F89 /* Sources */,
+				728E600E19436315000E9F89 /* Frameworks */,
+				728E600F19436315000E9F89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				728E601319436315000E9F89 /* PBXTargetDependency */,
+			);
+			name = SwiftFanoronaTests;
+			productName = SwiftReversiTests;
+			productReference = 728E601119436315000E9F89 /* SwiftFanoronaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		728E5FF719436314000E9F89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = razeware;
+				TargetAttributes = {
+					728E5FFE19436314000E9F89 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					728E601019436315000E9F89 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 728E5FFE19436314000E9F89;
+					};
+				};
+			};
+			buildConfigurationList = 728E5FFA19436314000E9F89 /* Build configuration list for PBXProject "SwiftFanorona" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 728E5FF619436314000E9F89;
+			productRefGroup = 728E600019436314000E9F89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				728E5FFE19436314000E9F89 /* SwiftFanorona */,
+				728E601019436315000E9F89 /* SwiftFanoronaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		728E5FFD19436314000E9F89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728E600A19436315000E9F89 /* Main.storyboard in Resources */,
+				728E600C19436315000E9F89 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728E600F19436315000E9F89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		728E5FFB19436314000E9F89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58FFADE1AB06F6300CF378B /* BoardDelegate.swift in Sources */,
+				728E600719436315000E9F89 /* ViewController.swift in Sources */,
+				E58FFADA1AB0650E00CF378B /* BoardSquare.swift in Sources */,
+				E58FFAE01AB0708A00CF378B /* DelegateMulticast.swift in Sources */,
+				E58FFAE61AB08B0500CF378B /* ComputerOpponent.swift in Sources */,
+				E58FFAE41AB07FF400CF378B /* FanoronaBoardDelegate.swift in Sources */,
+				E58FFAD21AB0609700CF378B /* BoardCellState.swift in Sources */,
+				E58FFAD61AB060F700CF378B /* Board.swift in Sources */,
+				E58FFADC1AB0666A00CF378B /* FanoronaBoardView.swift in Sources */,
+				E58FFAD81AB062BA00CF378B /* FanoronaBoard.swift in Sources */,
+				728E600519436315000E9F89 /* AppDelegate.swift in Sources */,
+				E58FFAD41AB060BD00CF378B /* BoardLocation.swift in Sources */,
+				E58FFAE21AB0765A00CF378B /* MoveDirection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728E600D19436315000E9F89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728E601819436315000E9F89 /* SwiftFanoronaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		728E601319436315000E9F89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 728E5FFE19436314000E9F89 /* SwiftFanorona */;
+			targetProxy = 728E601219436315000E9F89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		728E600819436315000E9F89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				728E600919436315000E9F89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		728E601919436315000E9F89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		728E601A19436315000E9F89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		728E601C19436315000E9F89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftFanorona/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = SwiftFanorona;
+			};
+			name = Debug;
+		};
+		728E601D19436315000E9F89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftFanorona/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = SwiftFanorona;
+			};
+			name = Release;
+		};
+		728E601F19436315000E9F89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftFanorona.app/SwiftFanorona";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftFanoronaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftFanoronaTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		728E602019436315000E9F89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftFanorona.app/SwiftFanorona";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftFanoronaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftFanoronaTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		728E5FFA19436314000E9F89 /* Build configuration list for PBXProject "SwiftFanorona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728E601919436315000E9F89 /* Debug */,
+				728E601A19436315000E9F89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728E601B19436315000E9F89 /* Build configuration list for PBXNativeTarget "SwiftFanorona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728E601C19436315000E9F89 /* Debug */,
+				728E601D19436315000E9F89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728E601E19436315000E9F89 /* Build configuration list for PBXNativeTarget "SwiftFanoronaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728E601F19436315000E9F89 /* Debug */,
+				728E602019436315000E9F89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 728E5FF719436314000E9F89 /* Project object */;
+}
